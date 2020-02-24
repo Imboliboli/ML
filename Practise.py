@@ -2,10 +2,11 @@ import tensorflow as tf
 import os
 import matplotlib.pyplot as plt
 from tensorflow import keras
+from keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
 from keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
 
-path = "ML/fruits-360_dataset/fruits-360"
+path = r'C:\Users\YongHao\Desktop\fruits-360'
 
 trainDir = os.path.join(path,"Training")
 testDir = os.path.join(path,"Test")
@@ -27,8 +28,9 @@ test_generator = train_datagen.flow_from_directory(directory=trainDir, batch_siz
                                                     shuffle=True)
 
 
-model = keras.Sequential([
+model = Sequential([
     Conv2D(16, 3, padding='same', activation='relu', input_shape=(100, 100, 3))
+    
 ])
 
 

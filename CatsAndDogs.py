@@ -8,7 +8,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-PATH = r"C:\Users\fuyon\PycharmProjects\ML\Images"
+PATH = r"C:\Users\YongHao\Desktop\Images"
 trainDir = os.path.join(PATH, "train")
 valDir = os.path.join(PATH, "validation")
 train_cat = os.path.join(trainDir, "cats")
